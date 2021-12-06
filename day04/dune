@@ -1,0 +1,11 @@
+(menhir
+  (modules parser))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
+
+(ocamllex lexer)
+
+(executable
+ (name main))
